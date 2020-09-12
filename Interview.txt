@@ -1,0 +1,9 @@
+What is the DOM? DOM is a document object model that represents html and css into the browser
+
+What is an event? An event is when Java Script interacts with HTML code
+
+What is an event listener? It waits for an event to occur. 
+
+Why would we convert a NodeList into an Array? nodelist is an array like object but it doesnt come with the build in array methods like an actual array has access to. When you change it you are able to manipulate it.
+
+What is a component? It is a function in Java Script that creates HTML elements and that can be added to the DOM. 
