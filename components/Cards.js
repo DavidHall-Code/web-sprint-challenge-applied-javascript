@@ -21,3 +21,67 @@
 //
 // Use your function to create a card for each of the articles, and append each card to the DOM.
 
+axios.get ('https://lambda-times-api.herokuapp.com/articles')
+    .then((r) => {
+        console.log ('Sucess, here is your data: ', r);
+
+        //r.data.articles console.log
+        let data = r.data.articles;
+        console.log (data);
+        let bootstrap = data.bootstrap;
+     let javascript = data.javascript;
+     let technology = data.technology;
+     let jquery = data.jquery;
+     let node = data.node;
+     console.log(node);
+     node.forEach((el) => {
+         cardsEntryPoint.appendChild(cardMaker(el));
+     });
+     javascript.forEach((el) => {
+        cardsEntryPoint.appendChild(cardMaker(el));
+    });
+    bootstrap.forEach((el) => {
+        cardsEntryPoint.appendChild(cardMaker(el));
+    });
+    technology.forEach((el) => {
+        cardsEntryPoint.appendChild(cardMaker(el));
+    });
+    jquery.forEach((el) => {
+        cardsEntryPoint.appendChild(cardMaker(el));
+    });
+     
+ })
+ .catch((err) => {
+     console.log('There was na error with your request: ', err);
+ });
+
+
+ function cardMaker(object) {
+     const divCard = document.createElement('div');
+     const headlineDiv = document.createElement('div');
+     const authorDiv = document.createElement('div');
+     const imgDiv = document.createElement('div');
+     const img = document.createElement('img');
+     const span = document.createElement('span');
+
+     divCard.classList.add('card');
+     headlineDiv.classList.add('headline');
+     authorDiv.classList.add('author');
+     imgDiv.classList.add('img-container');
+
+     headlineDiv.textContent = object.headline;
+     img.src = object.authorPhoto;
+     span.textContent = `By ${object.authorName}`;
+     divCard.appendChild(headlineDiv);
+     divCard.appendChild(authorDiv);
+     authorDiv.appendChild(imgDiv);
+     imgDiv.appendChild(img);
+     authorDiv.appendChild(span);
+
+     divCard.addEventListener('click', (event) => {
+        console.log(headlineDiv.textContent = object.headline);
+     });
+     return divCard;
+ };
+ const cardsEntryPoint = document.querySelector('.cards-container');
+    
