@@ -10,6 +10,8 @@
 //
 // NOTE: you do _not_ need to install axios as it's included in the HTML via script element
 
+
+
 axios.get ('https://lambda-times-api.herokuapp.com/topics')
     .then((ref) => {        
         console.log ('Here is responce: ', ref);
@@ -35,3 +37,4 @@ axios.get ('https://lambda-times-api.herokuapp.com/topics')
 
     const topics = document.querySelector ('.topics');
 
+    

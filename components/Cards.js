@@ -22,11 +22,11 @@
 // Use your function to create a card for each of the articles, and append each card to the DOM.
 
 axios.get ('https://lambda-times-api.herokuapp.com/articles')
-    .then((r) => {
-        console.log ('Sucess, here is your data: ', r);
+    .then((ref) => {
+        console.log ('Sucess, here is your data: ', ref);
 
         //r.data.articles console.log
-        let data = r.data.articles;
+        let data = ref.data.articles;
         console.log (data);
         let bootstrap = data.bootstrap;
      let javascript = data.javascript;
@@ -84,4 +84,7 @@ axios.get ('https://lambda-times-api.herokuapp.com/articles')
      return divCard;
  };
  const cardsEntryPoint = document.querySelector('.cards-container');
-    
+ 
+ 
+
+ 
