@@ -20,9 +20,9 @@ function Header() {
 
     header.classList.add ('header');
     span.classList.add ('date');
-    span.textContent = 'MARCH 28, 2020';
+    span.textContent = 'October 2, 2020';
     span2.classList.add ('temp');
-    span2.textContent = '98°';
+    span2.textContent = ' 52°';
     title.textContent = 'Lambda Times';
 
     header.appendChild (span);
