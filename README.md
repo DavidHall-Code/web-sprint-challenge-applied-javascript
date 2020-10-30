@@ -28,13 +28,22 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is the DOM?
 
+   - DOM is the Document Object Model that represents HTML and CSS in the browser.
+
 2. What is an event?
+
+   - An event is what interacts with HTML cde utilizing Javascript
 
 3. What is an event listener?
 
+   - A listener is what waits for an event to occur
+
 4. Why would we convert a NodeList into an Array?
 
+   - NodeList is an array like object but it doesn't come with the built in array methods like an actual array has access to. When you change it you are able to manipulate it.
+
 5. What is a component?
+   - It is a function in Java Script that creates HTML elements and that can be added to the DOM.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -84,6 +93,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's  Repo). **Please don't merge your own pull request**
+- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
