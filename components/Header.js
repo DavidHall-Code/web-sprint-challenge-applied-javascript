@@ -13,5 +13,27 @@
 
 function Header() {
 
-    const header = document.createElement('div')
-}
+    const header = document.createElement ('div')
+    const span = document.createElement ('span')
+    const title = document.createElement ('h1')
+    const span2 = document.createElement('span')
+
+    // Used current date and temp for Maine, United States
+    header.classList.add ('header')
+    span.classList.add ('date')
+    span.textContent = 'October 30, 2020'
+    title.textContent = 'Lambda Times'
+    span2.classList.add ('temp')
+    span2.textContent = '34°'
+
+    header.appendChild (span)
+    header.appendChild (title)
+    header.appendChild (span2)
+    return header
+
+};
+
+const header = Header()
+const entryPoint = document.querySelector ('.header-container')
+entryPoint.appendChild (header)
+
