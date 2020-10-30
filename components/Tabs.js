@@ -40,7 +40,7 @@ function tabMaker (data) {
     return divTab
 }
 
-const topics = document.querySelector('topics')
+const topics = document.querySelector('.topics')
 
 
     
